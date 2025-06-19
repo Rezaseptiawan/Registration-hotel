@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REGISTRATION FORM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="logo.png.png" alt="Resort logo" class="logo">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <h3>Guest Information</h3>
+                <label>Full Name</label>
+                <input type="text" name="fullname" required>
+
+                <label>Nationality</label>
+                <input type="text" name="nationality" required>
+
+                <label>ID/Passport Number</label>
+                <input type="text" name="id_number" required>
+
+                <label>Date Of Birth</label>
+                <input type="date" name="dob" required>
+
+                <label>Phone Number</label>
+                <input type="tel" name="phone" required>
+
+                <label>Email Address</label>
+                <input type="email" name="email" required>
+
+                    <label>Special Request</label>
+                    <textarea name="request" rows="3"></textarea>
+
+                    <div class="terms-container">
+                        <button type="button" onclick="openModal()">Read Terms & Condition</button>
+                        <input type="checkbox" id="terms" disabled required/>
+                        <label for="terms">I agree to the terms & condition</label>
+                    </div>
+
+                    <div class="submit-wrapper">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+
+                    <div id="termsModal" class="modal">
+                        <div class="modal-content">
+                            <h3>Terms & Condition</h3>
+                            <ul class="terms-list">
+                                <li>Check in from: 14:30. check-out until 11:30</li>
+                                <li>Early check in and late check may be available subject to availability</li>
+                                <li>No extra charges for children under 11 years old sharing room with parents in existing bed</li>
+                                <li>Baby cot and baby chairs are complimentary based on availability</li>
+                                <li>Any additional persons will be charged based on the applied hotel rate/price</li>
+                                <li>As a resort guest, you are not allowed to invite any external visitors. Should it be found, extra charges will be applied based on the hotel rate/price</li>
+                                <li>The resort will impose a fee of IDR 100,000 for lost or damaged room keys</li>
+                                <li>No Durians allowed</li>
+                                <li>Drones are not permitted</li>
+                                <li>Pets are not allowed</li>
+                            </ul>
+                             <button type="button" onclick="agreeTerms()">I have read the terms and conditions</button>
+                        </div>
+                    </div>
+                    <script src="terms.js"></script>
+            </form>
+        </div>
+    </body>
+</html>
