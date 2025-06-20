@@ -63,7 +63,7 @@ textarea {
 .terms-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     margin-top: 20px;
     font-size: 14px;
 }
