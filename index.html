@@ -35,8 +35,8 @@
 
                     <div class="terms-container">
                         <button type="button" onclick="openModal()">Read Terms & Condition</button>
-                        <input type="checkbox" id="terms" disabled required/>
-                        <label for="terms">I agree to the terms & condition</label>
+                        <input type="checkbox" id="termsCheckbox" disabled required/>
+                        <label for="termsCheckbox">I agree to the terms & condition</label>
                     </div>
 
                     <div class="submit-wrapper">
@@ -55,8 +55,28 @@
                                 <li>As a resort guest, you are not allowed to invite any external visitors. Should it be found, extra charges will be applied based on the hotel rate/price</li>
                                 <li>The resort will impose a fee of IDR 100,000 for lost or damaged room keys</li>
                                 <li>Drones, Pets, and durians are not allowed</li>
+                                <li>Following the Bank of Indonesian regulation, the transaction will be converted to IDR based on daily exchange rate</li>
+                                <li>My signature on this form authorizes MMP to use my credit card to settle the payment of any outstanding balances</li>
                             </ul>
-                             <button type="button" onclick="agreeTerms()">I have read the terms and conditions</button>
+                            <h4 class="disclaimer-title">Resort Disclaimer</h4>
+                                <p>
+                                Swimming pools can be extremely dangerous for unsupervised children and teenagers, as well as adults swimming alone.
+                                Swimming pool accidents can happen to anyone, regardless of swimming ability or age
+                                </p>
+                                <p>
+                                Please be informed that there is no safety fence/gate surrounding the swimming pool, therefore you should never leave a child
+                                or teenager unattended on the resort area including Private Pool villa. All children and teenagers, regardless of swimming ability,
+                                should be constantly supervised by an adult that can swim and is able to jump into the pool to assist a child in danger of drowning
+                                </p>
+                                <P>
+                                Munduk Moding Plantation is not liable for any accident, bodily or materials, loss of life and/or property, damage or expense,
+                                including, without limitation, attorney’s fees and cost of litigation, resulting from any and all swimming pool accidents or incidents
+                                occurring at entire resort area
+                                </P>
+                                <P>
+                                Since we provide a room safe, we will not accept any liability for valuable left in your room
+                                </P>
+                            <button type="button" onclick="agreeTerms()">I have read the terms and conditions</button>
                         </div>
                     </div>
                     <script src="terms.js"></script>
