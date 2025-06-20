@@ -91,24 +91,24 @@ textarea {
     display: none;
     position: fixed;
     z-index: 999;
-    top: 0;
     left: 0;
-    width: 100vh;
+    top: 0;
+    width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
     overflow: auto;
-    background-color: rgba(0,0,0,0,5);
 }
 
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
     padding: 20px;
-    border-radius: 10px;
     width: 90%;
     max-width: 600px;
+    border-radius: 10px;
     box-shadow: 0 0 10px #333;
     max-height: 80vh;
-    overflow-y: auto;
+    overflow-y: auto;  
     box-sizing: border-box;
 }
 
@@ -140,10 +140,6 @@ p {
 }
 
 @media (max-width: 480px) {
-    .terms-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
     .modal-content {
         margin: 20px auto;
         padding: 15px;
